@@ -2,8 +2,10 @@
   "name": "code-generator",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://codegenerator.app/",
   "dependencies": {
     "@material-ui/core": "^1.0.0",
+    "gh-pages": "^1.2.0",
     "history": "^4.7.2",
     "moment": "^2.22.1",
     "react": "^16.4.0",
@@ -17,6 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
   }
 }
